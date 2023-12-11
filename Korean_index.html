@@ -1,0 +1,305 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1"  />
+  <title>ImageMagick – Convert, Edit, or Compose Digital Images</title>
+  <meta name="application-name" content="ImageMagick" />
+  <meta name="description" content="Use ImageMagick® to create, edit, compose, and convert digital images. Resize an image, crop it, change its shades and colors, add captions, and more." />
+  <meta name="application-url" content="https://imagemagick.org" />
+  <meta name="generator" content="PHP" />
+  <meta name="keywords" content="convert, edit, or, compose, digital, images, image processing software" />
+  <meta name="rating" content="GENERAL" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <meta name="generator" content="ImageMagick Studio LLC" />
+  <meta name="author" content="ImageMagick Studio LLC" />
+  <meta name="revisit-after" content="2 DAYS" />
+  <meta name="resource-type" content="document" />
+  <meta name="copyright" content="Copyright (c) 1999 ImageMagick Studio LLC" />
+  <meta name="distribution" content="Global" />
+  <meta name="magick-serial" content="P131-S030410-R485315270133-P82224-A6668-G1245-1" />
+  <meta property='og:url' content='./' />
+  <meta property='og:title' content='ImageMagick' />
+  <meta property='og:image' content='./images/logo.png' />
+  <meta property='og:type' content='website' />
+  <meta property='og:site_name' content='ImageMagick' />
+  <meta property='og:description' content="Create, Edit, Compose, or Convert Digital Images" />
+  <meta name="google-site-verification" content="_bMOCDpkx9ZAzBwb2kF3PRHbfUUdFj2uO8Jd1AXArz4" />
+  <link href="www/index.html" rel="canonical" />
+  <link href="images/wand.png" rel="icon" />
+  <link href="images/wand.ico" rel="shortcut icon" />
+  <link href="www/assets/magick.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img class="d-block" id="icon" alt="ImageMagick" width="32" height="32" src="images/wand.ico"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#magick-navbars" aria-controls="magick-navbars" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="magick-navbars">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link " href="www/download.html">다운로드</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="www/command-line-tools.html">도구</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="www/command-line-processing.html">CLI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="www/develop.html">개발</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://github.com/ImageMagick/ImageMagick/discussions">커뮤니티</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">영어로 변경</a>  <!--This button takes you to the English page. The button “영어로 변경” means Change to English.-->
+            </li>
+            <li class="nav-item">
+                <iframe src="https://github.com/sponsors/ImageMagick/button" title="Sponsor ImageMagick" height="35" width="107" style="border: 0;"></iframe>
+            </li>
+        </ul>
+      <form class="d-flex form-inline" action="./www/search.html">
+        <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" name="sa">Search</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+  <div class="container">
+    <script async="async" src="http://localhost/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-3129977114552745"
+      data-ad-slot="6345125851"
+      data-full-width-responsive="true"
+      data-ad-format="horizontal"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+  </div>
+
+  <main class="container">
+  <div class="magick-template">
+<div class="magick-header">
+<h1 class="text-center">이미지매직</h1>
+<p class="lead magick-description">
+    <a href="images/wizard.png" title="And Now a Touch of Magick"><img class="img-fluid magick-icon" id="logo" alt="And Now a Touch of Magick" width="265" height="352" src="images/wizard.jpg" /></a> 이미지매직<sup><a href="http://tarr.uspto.gov/servlet/tarr?regser=serial&amp;entry=78333969" target="_blank">&#174;</a></sup> 은 그래픽 이미지를 새로 만들거나, 고치는 데 사용되는 무료, <a href="www/license.html">오픈 소스</a> 소프트웨어 입니다. 이는 비트맵 이미지를 생성, 편집, 구성 또는 변환하는 데 사용될 수 있으며 JPEG, PNG, GIF, TIFF 및 PDF와 같은 다양한 <a href="www/formats.html">파일 형식</a>을 지원합니다.</p>
+
+<p>이미지매직은 웹 개발, 그래픽 디자인, 비디오 편집 등의 산업은 물론 과학 연구, 의료 영상, 천문학 등의 산업에서 널리 사용됩니다. 다양하고 사용자 정의가 가능한 특성과 강력한 이미지 처리 기능 덕분에 광범위한 이미지 관련 잡업에 널리 사용됩니다.</p>
+<p>ImageMagick에는 복잡한 이미지 처리 작업을 실행하기 위한 명령줄 인터페이스와 해당 기능을 소프트웨어 애플리케이션에 통합하기 위한 API가 포함되어 있습니다. C로 작성되었으며 Linux, Windows 및 macOS를 포함한 다양한 운영 체제에서 사용할 수 있습니다.</p>
+
+<p>이미지매직의 메인 웹사이트는 <a href="https://imagemagick.org">https://imagemagick.org</a>입니다. 사용가능한 최신 버전은 <a href="www/download.html">ImageMagick 7.1.1-15</a>입니다. 이미지매직의 소스 코드는 <a href="https://github.com/ImageMagick/ImageMagick" target="_blank">repository</a>를 통해 액세스할 수 있습니다. 또한 이미지매직의 레거시 버전인 <a href="https://legacy.imagemagick.org" target="_blank">version 6</a>을 유지 관리합니다.</p>
+
+<p>이미지매직을 사용하기 전에 특정 로컬 환경에 맞는 보안 정책을 만드는 것을 권장드립니다. 또한 이<a href="www/security-policy.html">정책</a>을 설정하는데 대한 지침을 찾을 수 있습니다. 또한 <a href="https://imagemagick-secevaluator.doyensec.com/">유효성 검사 도구</a>를 사용하여 정책을 확인하는 것도 중요합니다.</p>
+
+<h2><a class="anchor" id="features"></a>특징 및 기능</h2>
+
+<p>이미지매직의 주요 기능 중 하나는 스크립팅 및 자동화 지원입니다. 이를 통해 사용자는 수동 개입 없이 자동으로 실행할 수 있는 복잡한 이미지 조작 파이프라인을 생성할 수 있습니다. 이는 많은 수의 이미지를 처리해야 하는 작업이나 정기적으로 수행해야 하는 작업에 특히 유용할 수 있습니다.</p>
+
+<p>이미지매직에는 핵심 이미지 조작 기능 외에도 애니메이션, 색상 관리, 이미지 렌더링 지원과 같은 다양한 기능도 포함되어 있습니다. 이러한 기능을 통해 그래픽 디자인, 과학적 시각화, 디지털 아트 등 광범위한 이미지 관련 작업을 위한 다목적 도구가 됩니다.</p>
+
+<p>전반적으로 이미지매직은 이미지 파일 표시, 변환 및 편집을 위한 강력하고 다양한 소프트웨어 제품군입니다. 다른 기능과 함께 스크립팅 및 자동화에 대한 지원을 통해 광범위한 이미지 관련 작업에 유용한 도구가 됩니다.</p>
+
+<p>이미지매직이 수행할 수 있는 작업에 대한 몇 가지 <a href="./www/examples.html">예</a>는 다음과 같습니다.</p>
+<div class="pre-scrollable">
+<table class="table table-sm table-hover table-striped table-responsive">
+  <tr>
+    <td><a href="./Usage/anim_basics/">Animation</a></td>
+    <td>	이미지 그룹에서 GIF 애니메이션 시퀀스를 만듭니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/command-line-options.html#bilateral-blur">Bilateral blur</a></td>
+    <td>비선형, 가장자리 보존 및 노이즈 제거 평활화 필터.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/color-management.html">Color management</a></td>
+    <td>색상 프로필을 사용하거나 색상 공간에서 요구하는 내장 감마 압축 또는 확장을 대신하여 정확한 색상 관리가 가능합니다..</td>
+  </tr>
+  <tr>
+    <td><a href="./www/color-thresholding.html">Color thresholding</a></td>
+    <td>색상 범위의 모든 픽셀을 흰색으로 강제 설정하고 그렇지 않으면 검정색으로 설정합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/command-line-processing.html">Command-line processing</a></td>
+    <td>명령줄에서 이미지매직을 활용해보세요.</td>
+  </tr>
+  <tr>
+    <td><a href="https://en.wikipedia.org/wiki/Complex_text_layout">Complex text layout</a></td>
+    <td>양방향 텍스트 지원 및 형성</td>
+  </tr>
+  <tr>
+    <td><a href="./www/composite.html">Composite</a></td>
+    <td>이미지위에 다른 이미지를 겹칩니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/connected-components.html">Connected component labeling</a></td>
+    <td>이미지의 연결된 영역에 고유 레이블을 지정합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/convex-hull.html">Convex hull</a></td>
+    <td>이미지 전경 객체를 포함하는 최소 영역 볼록 다각형이 생성됩니다. 또한, 최소 경계 상자와 회전되지 않은 각도도 생성됩니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/crop/">Decorate</a></td>
+    <td>이미지에 테두리나 프레임을 추가합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/transform/#vision">Delineate image features</a></td>
+    <td><a href="./Usage/transform/#canny">Canny edge detection</a>, <a href="www/command-line-options.html#hough-line">Hough lines</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/fourier/">Discrete Fourier transform</a></td>
+    <td>순방향 및 역방향 <a href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform">DFT</a>를 구현합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/distribute-pixel-cache.html">Distributed pixel cache</a></td>
+    <td>중간 픽셀 저장소를 하나 이상의 원격 서버로 오프로드합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/draw/">Draw</a></td>
+    <td>이미지에 모양이나 텍스트를 추가합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/cipher.html">Encipher or decipher an image</a></td>
+    <td>보통의 이미지를 이해할 수 없는 암호화된 말로 변환하고 다시 복원합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/convert.html">Format conversion</a></td>
+    <td>이미지를 다른 <a href="www/formats.html">형식</a>으로 변환합니다. (예 PNG to JPEG).</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/distorts/">Generalized pixel distortion</a></td>
+    <td>원근감을 포함한 이미지 왜곡을 수정합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/architecture.html#distributed">Heterogeneous distributed processing</a></td>
+    <td>특정 알고리즘은 <a href="./www/opencl.html">OpenCL</a>을 지원하므로 CPU, GPU 및 기타 프로세서로 구성된 플랫폼에서 동시에 실행함으로써 제공되는 속도 향상을 활용할 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/high-dynamic-range.html">High dynamic-range images</a></td>
+    <td>가장 밝은 직사광선부터 가장 깊고 어두운 그림자까지 실제 장면에서 발견되는 광범위한 강도 수준을 정확하게 표현합니다..</td>
+  </tr>
+  <tr>
+    <td><a href="./www/clahe.html">Histogram equalization</a></td>
+    <td>적응형 히스토그램 균등화를 사용하여 이미지의 대비를 향상시킵니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/magick-cache.html">Image cache</a></td>
+    <td>로컬 폴더에 이미지, 이미지 시퀀스, 비디오, 오디오 또는 메타데이터를 캐시하는 안전한 방법 및 도구입니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/fx.html">Image calculator</a></td>
+    <td>이미지, 이미지 시퀀스 또는 이미지 채널에 수학적 표현을 적용합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/gradient.html">Image gradients</a></td>
+    <td>가로, 세로, 원형, 타원형 모양의 두 가지 색상을 점진적으로 혼합합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/identify.html">Image identification</a></td>
+    <td>이미지의 형식과 속성을 설명합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/download.html#iOS">ImageMagick on the iPhone</a></td>
+    <td>iPhone 또는 iPad와 같은 <a href="https://www.apple.com/ios/">iOS</a>장에서 이미지를 변환, 편집 또는 구성합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/architecture.html#tera-pixel">Large image support</a></td>
+    <td>mega-, giga-, tera-pixel 크기의 이미지를 지원합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/montage.html">Montage</a></td>
+    <td>이미지 캔버스에 이미지 축소판을 나란히 배치합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/morphology/">Morphology of shapes</a></td>
+    <td>특징을 추출하고, 모양을 설명하고, 이미지의 패턴을 인식합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="www/motion-picture.html">Motion picture support</a></td>
+    <td>디지털 영화 작업에 사용되는 일반적인 이미지 형식을 지원합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/multispectral-imagery.html">Multispectral imagery</a></td>
+    <td>다중 스펙트럼 이미지를 지원합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/transform/#vision">Noise and color reduction</a></td>
+    <td><a href="https://legacy.imagemagick.org/https://imagemagick.org/discourse-server//viewtopic.html?t=26480">Kuwahara Filter</a>, <a href="https://legacy.imagemagick.org/https://imagemagick.org/discourse-server//viewtopic.html?t=25504">mean-shift</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.fmwconcepts.com/misc_tests/perceptual_hash_test_results_510/index.html">Perceptual hash</a></td>
+    <td>시각적으로 동일한 이미지를 동일하거나 유사한 해시로 매핑합니다. 이는 이미지 검색, 인증, 인덱싱, 복사 감지 및 디지털 워터마킹에 유용합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/blur/">Special effects</a></td>
+    <td>이미지를 흐리게 하거나 선명하게 하거나 임계값을 지정하거나 색조를 지정할 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/text/">Text &amp; comments</a></td>
+    <td>이미지에 텍스트를 삽입합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/architecture.html#threads">Threads of execution support</a></td>
+    <td>이미지매직은 스레드로부터 안전하며 대부분의 내부 알고리즘은 멀티코어 프로세서 칩이 제공하는 속도 향상을 활용하기 위해 <a href="./www/openmp.html">병렬</a>로 실행됩니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/resize/">Transform</a></td>
+    <td>이미지 크기 조정, 회전, 기울기 조정, 자르기, 뒤집기 또는 다듬기.</td>
+  </tr>
+  <tr>
+    <td><a href="./Usage/masking/">Transparency</a></td>
+    <td>이미지의 일부를 보이지 않게 렌더링합니다.</td>
+  </tr>
+  <tr>
+    <td><a href="./www/architecture.html#virtual-pixels">Virtual pixel support</a></td>
+    <td>이미지 경계 밖의 픽셀에 편리하게 접근할 수 있습니다.</td>
+  </tr>
+</table>
+</div>
+<br/>
+<p><a href="Usage" target="_blank">이미지매직의 사용법의 예</a>는 <a href="www/command-line-processing.html">명령줄</a>에서 소프트웨어를 사용하는 방법을 보여줍니다.또한 <a href="http://www.fmwconcepts.com/imagemagick/" target="_blank">Fred's ImageMagick Scripts</a>라는 웹사이트에는 기하학적 변환 적용, 이미지 흐림 및 선명화, 노이즈 제거 및 기타 작업 수행에 사용할 수 있는 여러 스크립트가 있습니다 . 또한 사용자가 자신의 시스템에 소프트웨어를 설치하지 않고도 이미지매직의 기능에 액세스할 수 있게 해주는 <a href="https://github.com/dlemstra/Magick.NET" target="_blank">Magick.NET</a>이라는 도구가 있습니다 . 마지막으로, 웹사이트에는 Windows 시스템에서 이미지매직을 사용하기 위한 팁과 예제가 포함된 <a href="http://im.snibgo.com/" target="_blank">페이지</a>도 있습니다.</p>
+
+<h4><a class="anchor" id="community"></a>커뮤니티</h4>
+<p><a href="https://github.com/ImageMagick/ImageMagick/discussions" target="_blank">토론</a>에 참여할 수 있는 커뮤니티에 가입하세요. 여기에서 다른 사용자가 묻는 질문에 대한 답변을 찾거나 직접 질문할 수 있습니다. 기술적인 질문, 개선 제안 또는 버그 수정이 있는 경우 <a href="https://github.com/ImageMagick/ImageMagick/issues" target="_blank">커뮤니티</a>에서 도움을 받을 수도 있습니다.</p>
+
+</div>
+  </div>
+  </main><!-- /.container -->
+  <footer class="magick-footer">
+    <div class="container-fluid">
+      <a href="www/security-policy.html">Security</a> •
+      <a href="www/news.html">News</a>
+     
+      <a href="index.html#"><img class="d-inline" id="wand" alt="And Now a Touch of Magick" width="16" height="16" src="images/wand.ico"/></a>
+     
+      <a href="www/links.html">Related</a> •
+      <a href="www/sitemap.html">Sitemap</a>
+   <br/>
+     <a href="www/support.html">Sponsor</a> •
+     <a href="www/cite.html">Cite</a> •
+     <a href="http://pgp.mit.edu/pks/lookup?op=get&amp;search=0x89AB63D48277377A">Public Key</a> •
+     <a href="www/https://imagemagick.org/script/contact.php">Contact Us</a>
+   <br/>
+     <a href="https://github.com/imagemagick/imagemagick" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" width="2%" height="2%" role="img" focusable="false"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg></a> •
+     <a href="https://twitter.com/imagemagick" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 300 300" width="2%" height="2%" role="img" focusable="false"><title>Twitter</title><path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/></svg></a>
+    <br/>
+    <small>Copyright © 1999 ImageMagick Studio LLC</small>
+    </div>
+  </footer>
+
+  <!-- Javascript assets -->
+  <script src="www/assets/magick.js" ></script>
+  </body>
+</html>
+<!-- Magick Cache 12th September 2023 23:56 -->
